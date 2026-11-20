@@ -49,7 +49,7 @@ def test_channel_up():
     assert str(tv) == "Power = True, Channel = 1, Volume = 0"
 
     #tv is on and channel is increased past max channel
-    for _ in range(Television.MAX_CHANNEL + 1):
+    for x in range(Television.MAX_CHANNEL + 1):
         tv.channel_up()
     assert str(tv) == "Power = True, Channel = 1, Volume = 0"
 
